@@ -1,3 +1,4 @@
+flask_login
 Flask
 requests
 firebase-admin
