@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>output</title>
+    <link rel="stylesheet" href="/static/css/output_finalised.css" />
+    <script src="/static/js/script5.js" defer></script>
+    <script type="module" src="/static/js/social-links.js" defer></script>
+    <!-- Add this right after your <body> tag -->
+  <script>
+  // Store the user email from Flask using the correct variable name
+    const userEmail = "{{ email }}";
+  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <!-- <a href="javascript:history.back()" class="d-flex align-items-center mb-3 me-md-auto link-body-emphasis text-decoration-none">
+          <span class="fs-4 nav nav-pills nav-link nav-item" style="font-size: 10px;">← Logout</span>
+        </a> -->
+        
+        <form action="{{ url_for('logout') }}" method="post" class="d-flex align-items-center mb-2">
+          <button type="submit" style="border: 3px solid #000000;">
+            ← LOG OUT
+          </button>
+        </form>
+        
+        <div class="profile_pic">
+          <div class="img_cls">
+            <img src="static/images/profile_pic.png" alt="profile_pic" />
+          </div>
+        </div>
+        <div class="details">
+          <div class="details_cls">
+              <p><span><img src="static/images/fb_icon.png" alt="facebook"></span> <span class="social-link facebook-link">Not Available</span></p>
+              <p><span><img src="static/images/insta_icon.png" alt="instagram"></span> <span class="social-link instagram-link">Not Available</span></p>
+              <p><span><img src="static/images/twitter_icon.png" alt="twitter"></span> <span class="social-link twitter-link">Not Available</span></p>
+              <p><span><img src="static/images/YouTube_icon.png" alt="youtube"></span> <span class="social-link youtube-link">Not Available</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="right_side">
+        <div class="right_upr">
+          <div class="upr">
+            
+            <div class="box1 boxes" id="box1">
+              <div class="box_in">
+                <div class="status_upr">
+                <img style="height: 150px; margin:15px;" src="static/images/YouTube.png" alt="YouTube"/>
+              </div>
+              <div class="status_lwr">
+                <button type="button" onclick="toggleUI('box1')"><span><img src="static/images/star_icon.png" alt=""></span> &nbsp; Generate</button>
+              </div>
+              </div>
+            </div>
+            
+            <div class="box2 boxes" id="box2">
+              <div class="box_in">
+                <div class="status_upr">
+                <img style="height: 150px; margin:15px;" src="static/images/instagram.png" alt="Instagram"/>
+              </div>
+              <div class="status_lwr">
+                <button type="button" onclick="toggleUI('box2')"><span><img src="static/images/star_icon.png" alt=""></span> &nbsp; Generate</button>
+              </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="lwr">
+            
+            <div class="box3 boxes" id="box3">
+              <div class="box_in">
+                <div class="status_upr">
+                <img style="height: 150px; margin:15px;" src="static/images/facebook.png" alt="Facebook"/>
+              </div>
+              <div class="status_lwr">
+                <button type="button" onclick="toggleUI('box3')"><span><img src="static/images/star_icon.png" alt=""></span> &nbsp; Generate</button>
+              </div>
+              </div>
+            </div>
+            
+            <div class="box4 boxes" id="box4">
+              <div class="box_in">
+                <div class="status_upr">
+                <img style="height: 150px; margin:15px;" src="static/images/twitter.png" alt="Twitter"/>
+              </div>
+              <div class="status_lwr">
+                <button type="button" onclick="toggleUI('box4')"><span><img src="static/images/star_icon.png" alt=""></span> &nbsp; Generate</button>
+              </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="right_lwr">
+            <!-- <button type="button" id="complaint-button" class="complaint-btn">Generate Complaint Report</button> -->
+            <!-- <div id="pdfModal">
+              <div id="pdfContainer">
+                  <button class="close-btn" onclick="closeModal()">X</button>
+                  <iframe id="pdfViewer"></iframe>
+              </div> -->
+              <button type="button" id="complaint-button" class="complaint-btn">Generate Complaint Report</button>
+
+<!-- PDF Preview Modal -->
+<div id="pdfModal" style="display:none; position:fixed; top:10%; left:10%; width:80%; height:80%; background:#fff; border:1px solid #ccc; box-shadow:0px 0px 10px rgba(0,0,0,0.5); z-index:1000;">
+  <button onclick="closePDF()" style="float:right; margin:10px;">Close</button>  
+  <!-- <button onclick="window.location.href='https://mail.google.com/mail/?view=cm&fs=1&to=anushree2004321@gmail.com&su=Subject&body=Hello'" style="float:right; margin:10px;">Send mail</button> -->
+  <button onclick="sendMail()" style="float:right; margin:10px;">Send mail</button>
+    <iframe id="pdfViewer" width="100%" height="90%"></iframe>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
