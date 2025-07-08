@@ -456,7 +456,10 @@ function proceedWithDataFetch(boxId, platform, platformName, currentImage, userE
 }
 
 async function generateReport(boxId, platformName) {
+console.log("generate report function");   
+ 
     try {
+        console.log("try block generate report function");
         // Retrieve stored data
         const commentsData = JSON.parse(localStorage.getItem(`${boxId}_data`));
         const dataURL = localStorage.getItem(`${boxId}_image`);
