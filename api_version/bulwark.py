@@ -8,6 +8,7 @@ import report
 import secrets
 import requests
 import os
+import json
 import subprocess
 import time
 import youtube2
@@ -25,6 +26,11 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'home'
 
+# Write the environment variable to a temporary JSON file
+if os.getenv("FIREBASE_CREDENTIALS"):
+    with open("firebase-adminsdk.json", "w") as f:
+        f.write(os.environ["FIREBASE_CREDENTIALS"])
+        
 # Initialize Firebase Admin
 cred = credentials.Certificate("firebase-adminsdk.json")  # Replace with your Firebase credentials file path
 initialize_app(cred)
