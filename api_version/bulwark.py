@@ -164,7 +164,9 @@ def generate_platform_data(platform):
 
 @app.route('/generate/report', methods=['POST'])
 def generate_report():
+    print("Entered report function ")
     try:
+        print("Inside try block")
         data = request.get_json()
         
         platform_name = data.get('platform_name')
