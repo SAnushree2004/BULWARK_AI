@@ -87,9 +87,12 @@ This project was built with strong teamwork and sleepless nights:
     ```bash
     python app.py
     
-6. **Open in browser:**
+6. **🌐 Open in browser:**
 
-    Visit http://localhost:5000
+      Once the server is running, open your browser and visit:
+      
+      👉 [http://localhost:5000](http://localhost:5000)
+      
 
 ## 📄 Report Generation
 
