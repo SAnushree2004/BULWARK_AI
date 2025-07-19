@@ -15,6 +15,22 @@ A Final Year Project to Fight Cyberbullying Across Social Media Platforms
 - 📝 Platform-wise reports and consolidated complaint reports
 - ☁️ Hosted on Render
 
+## 🧠 Two Versions of Bulwark AI
+
+We have developed **two versions** of Bulwark AI to explore both third-party tools and custom machine learning models:
+
+1. **Perspective API Version** (Live on Render)  
+   - Uses **Google’s Perspective API** to analyze the toxicity of comments.
+   - Offers high accuracy, fast response time, and reliable results using Google’s pre-trained models.
+   - Currently deployed at 👉 [https://bulwark-ai.onrender.com](https://bulwark-ai.onrender.com)
+
+2. **Custom ML Model Version** (Offline/Experimental)  
+   - Uses a machine learning model **trained by us** on a labeled dataset of social media comments.
+   - Integrates preprocessing, vectorization (e.g., TF-IDF), and a classifier (like Logistic Regression or Random Forest).
+   - Allows for offline processing and better control over model tuning and training.
+
+> This dual approach helped us compare real-world APIs with custom-built solutions, giving us deeper insight into NLP and toxicity detection challenges.
+
 ## 🛠️ Tech Stack
 
 | Frontend       | Backend         | APIs & Tools            | Deployment |
