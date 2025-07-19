@@ -61,9 +61,10 @@ This project was built with strong teamwork and sleepless nights:
 
     ## Create a .env file in the root directory and add your credentials:
 
-    PERSPECTIVE_API_KEY=your_key_here
-    FACEBOOK_ACCESS_TOKEN=your_token_here
-    YOUTUBE_API_KEY=your_key_here
+    ```env
+      PERSPECTIVE_API_KEY=your_key_here
+      FACEBOOK_ACCESS_TOKEN=your_token_here
+      YOUTUBE_API_KEY=your_key_here
    
 5. **Run the Flask app:**
     
