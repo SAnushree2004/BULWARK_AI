@@ -7,14 +7,7 @@ A Final Year Project to Fight Cyberbullying Across Social Media Platforms
 ## 🌐 Live Demo
 👉 [https://bulwark-ai.onrender.com](https://bulwark-ai.onrender.com)
 
-### 🔑 Sample Login
-
-Use the following credentials to explore the app:
-
-- **Email**: anjanam@gmail.com  
-- **Password**: Anjana@1234
-
-> Note: This is a sample test account for demo purposes only.
+> 🔐 To explore the app, you can register with your own test credentials using the **Sign Up** option.
 
 ## 📌 Features
 - 🔐 User-friendly interface with Sign Up/Login
