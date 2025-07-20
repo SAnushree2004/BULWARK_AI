@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,Franklin Gothic Raw;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(184,229,226);
+    display: flex;
+}
+
+.right_side{
+    width: 76%;
+    height: 92%;
+    margin: 2% 2% 2% 0;
+    /* background-color: rgb(60, 193, 129); */
+}
+
+.upr{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+}
+
+.lwr{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(225, 6, 6); */
+    display: flex;
+}
+
+.right_upr{
+    width: 100%;
+    height: 93%;
+    /* background-color: brown; */
+}
+
+.right_lwr{
+    width: 100%;
+    height: 8%;
+    margin-top: 1%;
+    /* background-color: rgb(76, 93, 54); */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box1{
+    width: 50%;
+    height: 96%;
+    /* background-color: rgb(52, 182, 49); */
+    margin: 0 1% 1% 0;
+}
+
+.boxes{
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* background-color: rgb(38, 52, 47); */
+}
+
+.box2{
+    width: 50%;
+    height: 96%;
+    /* background-color: rgb(58, 12, 123); */
+    margin: 0 0 1% 1%;
+    background-color: rgb(255, 255, 255);
+}
+
+.box3{
+    width: 50%;
+    height: 96%;
+    /* background-color: rgb(180, 157, 28); */
+    margin: 1% 1% 0 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.box4{
+    width: 50%;
+    height: 96%;
+    /* background-color: rgb(209, 51, 2); */
+    margin: 1% 0 0 1%;
+    background-color: rgb(255, 255, 255);
+}
+
+.box_in{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative; /* Ensures absolute positioning is relative to this container */
+    /* padding-top: 20px; */
+    display: flex; /* Use flexbox for inner content layout */
+    flex-direction: column; /* Stack image and button vertically */
+    align-items: center; /* Center horizontally within inner container */
+    /* gap: 10px; Add some spacing between image and button */
+}
+
+.boxes_in img{
+    max-width: 100%; 
+    display: block; 
+}
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(52, 184, 191);
+}
+
+/* SIDEBAR */
+.sidebar{
+    width: 23%;
+    height: 92%;
+    margin: 2%;
+    background-color: rgb(255, 255, 255);
+    overflow: auto; 
+}
+
+.profile_pic{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.img_cls{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.details{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+}
+
+.details_cls{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    word-wrap: break-word; /* Allow text to break to the next line */
+    word-break: break-word; /* Ensure long words break appropriately */
+}
+
+.details_cls p {
+    font-size: 15px;
+    font-family: sans-serif,Franklin Gothic Raw;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap; /* Allow text to wrap to the next line */
+} 
+
+
+.right_lwr button{
+    padding: 10px 5px;
+    border: none;
+    border-radius: 0;
+    background-color: rgb(52, 184, 191);
+    font-weight: 600;
+}
+
+.nav-item{
+    margin-right: 10px;
+}
+
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link.active{
+    font-weight: bold;
+    color: white;
+    background-color: rgb(52, 184, 191)!important; 
+}
+
+.nav-link:hover, .btn:hover{
+    background-color: rgb(52, 184, 191);
+    color: white;
+}
+
+.status_upr {
+    margin-top: 20px;
+    width: 100%;
+    height: 65%;
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    /* background-color: blue; */
+}
+
+.status_lwr {
+    width: 100%;
+    height: 25%;
+    /* background-color: rgb(147, 147, 184); */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers items horizontally */
+    margin-top: 0;
+    align-items: center; /*Centers items vertically (optional if needed) */
+}
+
+.top-left-image {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 50px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* -------SPEEDOMETER CSS--------- */
+
+.gauge {
+    width: 100%;
+    max-width: 300px;
+    font-family: 'roboto', sans-serif;
+    font-size: 40px;
+}
+
+.gauge_body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background: #c6c7c7;
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+}
+
+.gauge_fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: #009578;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+    border-top: 10px solid rgb(53, 53, 53);
+}
+
+.gauge_cover {
+    width: 75%;
+    height: 150%;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+a {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #0056b3;
+}
