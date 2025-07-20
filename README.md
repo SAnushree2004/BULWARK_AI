@@ -72,12 +72,12 @@ This project was built with strong teamwork and sleepless nights:
     
 4. **Configure environment variables:**
 
-    ## Get API keys for:
+    **Get API keys for:**
     - Google Perspective API
     - Facebook Graph API
     - YouTube Data API v3
 
-    ## Create a .env file in the root directory and add your credentials:
+    **Create a .env file in the root directory and add your credentials:**
 
     ```env
       PERSPECTIVE_API_KEY= "your_key_here"
@@ -98,7 +98,7 @@ This project was built with strong teamwork and sleepless nights:
 
 ## 📄 Report Generation
 
-- Generate a **platform-wise analysis report**
+- Generates a **platform-wise analysis report**
 - Option to generate a **combined complaint report** for authorities
 
 ## 🎓 Academic Note
