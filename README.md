@@ -106,6 +106,10 @@ This project was built with strong teamwork and sleepless nights:
 This project was developed as the **main project** for the final year B.Tech (Information Technology) program.  
 It was driven by the desire to address the growing issue of cyberbullying through the power of AI.
 
+## 📚 Resource
+
+https://drive.google.com/drive/folders/1sn49M8jsbbYUbJMiyuekIhHuEbcOTX47
+
 ## 📢 License
 
 This project is for academic and demonstration purposes.  
